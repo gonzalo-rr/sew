@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="UO283874" />
+    <meta name ="description" content ="Encuesta de satisfacción con ASP.NET Core." />
+    <meta name ="keywords" content ="ASP.NET Core, Microsoft, .NET, ASP, IIS, ASP.NET, satisfaction, form" />
+    
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+
+    <title> ASP.NET Core Framework </title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <header>
+        <h1> ASP.NET Core </h1>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li> <a href="index.html" tabindex="1" accesskey="i"> Página principal </a> </li>
+                <li> <a href="caracteristicas.html" tabindex="2" accesskey="c"> Características </a> </li>
+                <li> <a href="compatibilidad.html" tabindex="3" accesskey="c"> Compatibilidad </a> </li>
+                <li> <a href="formulario.html" tabindex="4" accesskey="f"> Formulario </a> </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+
+        <h2> Encuesta de satisfacción </h2>
+        <p> Por favor ayúdenos completando este corto formulario, ¡solo le llevará 30 segundos! </p>
+
+        <form>
+            <p>
+                <label for="nombre"> Nombre y apellidos (opcional) </label>
+                <input id="nombre" type="text" placeholder="Nombre Apellidos"/>
+            </p>
+            <p>
+                <label for="fecha"> Fecha de nacimiento (opcional) </label>
+                <input id="fecha" type="date"/>
+            </p>
+            <p>
+                <label for="email"> Correo electrónico </label>
+                <input type="email" id="email" placeholder="ejemplo@ejemplo.com" required/>
+            </p>
+            <fieldset>
+                <legend> ¿Usted programa o ha programado usando el framework ASP.NET Core? </legend>
+                <p>
+                    <label for="siprogramado"> Sí </label>
+                    <input type="radio" id="siprogramado"/>
+                </p>
+                <p>
+                    <label for="noprogramado"> No </label>
+                    <input type="radio" id="noprogramado"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> ¿Usted programa o ha programado usando frameworks para la web distintos a ASP.NET Core? </legend>
+                <p>
+                    <label for="siprogramadodistinto"> Sí </label>
+                    <input type="radio" id="siprogramadodistinto"/>
+                </p>
+                <p>
+                    <label for="noprogramadodistinto"> No </label>
+                    <input type="radio" id="noprogramadodistinto"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> ¿Cuánta experiencia tiene dentro de la programación? </legend>
+                <p>
+                    <label for="experiencia"> Experiencia (0 - 5) </label>
+                    <input type="range" id="experiencia" min="0" max="5" step="1" value="0"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> Si ha usado ASP.NET Core, cómo de satisfecho está con el framework? </legend>
+                <p>
+                    <label for="satisfaccion"> Satisfacción (0 - 5) </label>
+                    <input type="range" id="satisfaccion" min="0" max="5" step="1" value="0"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> ¿Qué aspectos cree que se puedan mejorar? </legend>
+                <p>
+                    <label for="mejorainterfaz"> Interfaz de usuario </label>
+                    <input type="checkbox" id="mejorainterfaz"/>
+                </p>
+                <p>
+                    <label for="mejoradocumentacion"> Documentación </label>
+                    <input type="checkbox" id="mejoradocumentacion"/>
+                </p>
+                <p>
+                    <label for="mejoraaccesibilidad"> Accesibilidad </label>
+                    <input type="checkbox" id="mejoraaccesibilidad"/>
+                </p>
+                <p>
+                    <label for="mejoraprogramacion"> Facilidad de programación </label>
+                    <input type="checkbox" id="mejoraprogramacion"/>
+                </p>
+                <p>
+                    <label for="mejoraonline"> Recursos online </label>
+                    <input type="checkbox" id="mejoraonline"/>
+                </p>
+                <p>
+                    <label for="mejorasoporte"> Soporte técnico </label>
+                    <input type="checkbox" id="mejorasoporte"/>
+                </p>
+                <p>
+                    <label for="mejoraeficiencia"> Eficiencia </label>
+                    <input type="checkbox" id="mejoraeficiencia"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="textArea"> Observaciones (opcional) </label>
+                </p>
+                <textarea id="textArea" name="comentarios" maxlength="1000">  </textarea>
+            </fieldset>
+            <fieldset>
+                <legend> ¿Quiere crear una cuenta en nuestra página web? </legend>
+                <p>
+                    <label for="user"> Nombre de usuario: </label>
+                    <input type="text" id="user"/>
+                </p>
+                <p>
+                    <label for="pass"> Contraseña: </label>
+                    <input type="password" id="pass"/>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p> <label> <input type="submit" value="Enviar"/> </label> </p>
+                <p> <label> <input type="reset" value="Reiniciar"/> </label> </p>
+            </fieldset>
+            
+        </form>
+
+    </main>
+
+    <footer>
+        <p> UO283874 </p>
+        <p> Gonzalo Rodríguez Rodríguez </p>
+    </footer>
+</body>
+</html>
