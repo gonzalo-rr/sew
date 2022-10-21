@@ -3,18 +3,44 @@ Gonzalo Rodríguez Rodríguez
 Descripción:
 *****************************/
 
-body {
-
+body { /* Especificidad: 001 */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #d1e6e7;
+    text-align: justify;
+    padding: 1em;
+    border: 1em;
+    margin: 1em;
 }
-header {
-
+p {
+    font-size: 1em;
+}
+a:link { /* Especificidad: 001 */
+    color: blue;
+}
+a:visited { /* Especificidad: 001 */
+    color: blue;
+}
+a:hover {
+    color: pink;
+}
+h1 { /* Especificidad: 001 */
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(47, 47, 47);
+}
+header { /* Especificidad: 001 */
+    background-color: cadetblue;
+    padding: 2em;
+    text-align: center;
 }
 aside {
-
+    background-color: #8eb9bb;
+    padding: 0.5em;
+    text-align: left;
 }
-main {
-
+footer { /* Especificidad: 001 */
+    background-color: #8eb9bb;
+    padding: 0.5em;
+    text-align: right;
 }
-footer {
-
-}
+/* Dejar el nav bonito con un layout */
