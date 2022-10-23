@@ -6,7 +6,7 @@ Descripción: Hoja de estilos principal de la página web,
 
 body { /* Especificidad: 001 */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vw;
+    font-size: 3vh;
     color: black;
     background-color: #d1e6e7;
     text-align: justify;
@@ -24,7 +24,7 @@ header { /* Especificidad: 001 */
 }
 h1 { /* Especificidad: 001 */
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3vw;
+    font-size: 5vh;
     color: rgb(47, 47, 47);
     background-color: cadetblue;
 }
@@ -48,15 +48,15 @@ img { /* Especificidad: 001 */
     margin: 2vw;
 }
 p { /* Especificidad: 001 */
-    font-size: 1em;
+    font-size: 2vh;
 }
 a:visited { /* Especificidad: 011 */
     color: black;
 }
-nav > a:hover { /* Especificidad: 012 */
+nav a:hover { /* Especificidad: 012 */
     color: orangered;
 }
-main > a:hover { /* Especificidad: 012 */
+p a:hover { /* Especificidad: 012 */
     color: orangered;
 }
 a { /* Especificidad: 001 */
@@ -66,10 +66,10 @@ a { /* Especificidad: 001 */
     margin: 0vw;
 }
 nav { /* Especificidad: 001 */
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     text-align: center;
-    padding: 1vw;
+    padding: 1vh;
 }
 input { /* Especificidad: 001 */
-    font-size: 1.5vw;
+    font-size: 1.5vh;
 }
