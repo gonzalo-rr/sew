@@ -12,7 +12,7 @@ body { /* Especificidad: 001 */
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vh auto auto 15vh;
+    grid-template-rows: 10vw auto auto 10vw;
 }
 header { /* Especificidad: 001 */
     grid-row: 1;
@@ -30,7 +30,7 @@ footer { /* Especificidad: 001 */
     grid-row: 4;
     grid-column: 1 / span 3;
 }
-nav > ul { /* Especificidad: 002 */
+nav { /* Especificidad: 002 */
     display: grid;
 
     grid-template-columns: auto auto auto auto;
