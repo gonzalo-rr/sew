@@ -1,0 +1,38 @@
+/****************************
+Gonzalo Rodríguez Rodríguez
+Descripción: Hoja de estilos secundaria de la página web
+    especifica la disposición en la pantalla de todos los elementos html de la página
+*****************************/
+
+body { /* Especificidad: 001 */
+    /*
+    Tres columnas
+    Cuatro filas
+    */
+    display: grid;
+
+    grid-template-columns: 33vw auto 33vw;
+    grid-template-rows: 20vh auto auto 15vh;
+}
+header { /* Especificidad: 001 */
+    grid-row: 1;
+    grid-column: 1;
+}
+aside { /* Especificidad: 001 */
+    grid-row: 1;
+    grid-column: 2 / span 2;
+}
+main { /* Especificidad: 001 */
+    grid-row: 3;
+    grid-column: 1 / span 3;
+}
+footer { /* Especificidad: 001 */
+    grid-row: 4;
+    grid-column: 1 / span 3;
+}
+nav > ul { /* Especificidad: 002 */
+    display: grid;
+
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
