@@ -77,3 +77,12 @@ footer { /* Especificidad: 001 */
     padding: 1vw;
     text-align: right;
 }
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    margin: 2vw;
+}

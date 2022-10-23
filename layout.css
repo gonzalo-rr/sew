@@ -11,7 +11,7 @@ body { /* Especificidad: 001 */
     */
     display: grid;
 
-    grid-template-columns: 33vw auto 33vw;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20vh auto auto 15vh;
 }
 header { /* Especificidad: 001 */
