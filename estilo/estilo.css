@@ -1,0 +1,75 @@
+/****************************
+Gonzalo Rodríguez Rodríguez
+Descripción: Hoja de estilos principal de la página web,
+    especifica el aspecto (fuentes, colores, tamaños de letra, márgenes, etc) de la página para todos los elementos html
+*****************************/
+
+body { /* Especificidad: 001 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    color: black;
+    background-color: #d1e6e7;
+    text-align: justify;
+    padding: 1vw;
+    border: 1vw;
+    margin: 1vw;
+
+    align-self: center;
+}
+header { /* Especificidad: 001 */
+    color: black;
+    background-color: cadetblue;
+    padding: 2vw;
+    text-align: center;
+}
+h1 { /* Especificidad: 001 */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    color: rgb(47, 47, 47);
+    background-color: cadetblue;
+}
+aside { /* Especificidad: 001 */
+    color: black;
+    background-color: #8eb9bb;
+    padding: 1vw;
+    text-align: left;
+}
+footer { /* Especificidad: 001 */
+    color: black;
+    background-color: #8eb9bb;
+    padding: 1vw;
+    text-align: right;
+}
+video { /* Especificidad: 001 */
+    max-width: 100%;
+    height: auto;
+}
+img { /* Especificidad: 001 */
+    margin: 2vw;
+}
+p { /* Especificidad: 001 */
+    font-size: 1em;
+}
+a:visited { /* Especificidad: 011 */
+    color: black;
+}
+nav > a:hover { /* Especificidad: 012 */
+    color: orangered;
+}
+main > a:hover { /* Especificidad: 012 */
+    color: orangered;
+}
+a { /* Especificidad: 001 */
+    color: black;
+    text-decoration: none;
+    padding: 2vw;
+    margin: 0vw;
+}
+nav { /* Especificidad: 001 */
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 1vw;
+}
+input { /* Especificidad: 001 */
+    font-size: 1.5vw;
+}
