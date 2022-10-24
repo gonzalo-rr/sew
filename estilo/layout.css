@@ -30,7 +30,7 @@ footer { /* Especificidad: 001 */
     grid-row: 4;
     grid-column: 1 / span 3;
 }
-nav { /* Especificidad: 002 */
+nav { /* Especificidad: 001 */
     display: grid;
 
     grid-template-columns: auto auto auto auto;

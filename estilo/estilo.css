@@ -22,12 +22,6 @@ header { /* Especificidad: 001 */
     padding: 2vw;
     text-align: center;
 }
-h1 { /* Especificidad: 001 */
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 5vh;
-    color: rgb(47, 47, 47);
-    background-color: cadetblue;
-}
 aside { /* Especificidad: 001 */
     color: black;
     background-color: #8eb9bb;
@@ -40,6 +34,20 @@ footer { /* Especificidad: 001 */
     padding: 1vw;
     text-align: right;
 }
+nav { /* Especificidad: 001 */
+    font-size: 2.5vh;
+    text-align: center;
+    padding: 1vh;
+}
+h1 { /* Especificidad: 001 */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    color: rgb(47, 47, 47);
+    background-color: cadetblue;
+}
+input { /* Especificidad: 001 */
+    font-size: 1.5vh;
+}
 video { /* Especificidad: 001 */
     max-width: 100%;
     height: auto;
@@ -50,6 +58,12 @@ img { /* Especificidad: 001 */
 p { /* Especificidad: 001 */
     font-size: 2vh;
 }
+a { /* Especificidad: 001 */
+    color: black;
+    text-decoration: none;
+    padding: 2vw;
+    margin: 0vw;
+}
 a:visited { /* Especificidad: 011 */
     color: black;
 }
@@ -58,18 +72,4 @@ nav a:hover { /* Especificidad: 012 */
 }
 p a:hover { /* Especificidad: 012 */
     color: orangered;
-}
-a { /* Especificidad: 001 */
-    color: black;
-    text-decoration: none;
-    padding: 2vw;
-    margin: 0vw;
-}
-nav { /* Especificidad: 001 */
-    font-size: 2.5vh;
-    text-align: center;
-    padding: 1vh;
-}
-input { /* Especificidad: 001 */
-    font-size: 1.5vh;
 }
