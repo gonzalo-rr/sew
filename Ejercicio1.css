@@ -1,0 +1,43 @@
+/*
+Hoja de estilos para el ejercicio 1
+*/
+
+body {
+    color: black;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: azure;
+    font-size: 4vh;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: aliceblue;
+    font-size: 3.5vh;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: aliceblue;
+    font-size: 3vh;
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: aliceblue;
+    font-size: 2.5vh;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4D4D4D;
+    background-color: aliceblue;
+    font-size: 2vh;
+}
