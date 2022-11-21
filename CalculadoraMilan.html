@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="UO283874-Gonzalo-Rodríguez-Rodríguez" />
+    <meta name ="description" content ="Calculadora Milan." />
+    <meta name ="keywords" content ="Calculadora, Milan, JavaScript" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora Milan</title>
+
+    <script src="CalucladoraMilan.js"></script>
+    <link rel="stylesheet" type="text/css" href="CalculadoraMilan.css" />
+</head>
+
+<body>
+    <header>
+        <label for="pantalla"> CALCULADORA MILAN </label>
+        <input id="pantalla" name="pantalla" type="text" readonly/>
+    </header>
+    <main>
+        <input type="button" value="ON/C" onclick="calculadora.pulsarTecla('ON/C')"></input>
+        <input type="button" value="CE" onclick="calculadora.pulsarTecla('CE')"></input>
+        <input type="button" value="+/-" onclick="calculadora.pulsarTecla('+/-')"></input>
+        <input type="button" value="√" onclick="calculadora.pulsarOperacion('√')"></input>
+        <input type="button" value="%" onclick="calculadora.pulsarOperacion('%')"></input>
+        <input type="button" value="7" onclick="calculadora.pulsarNumero('7')"></input>
+        <input type="button" value="8" onclick="calculadora.pulsarNumero('8')"></input>
+        <input type="button" value="9" onclick="calculadora.pulsarNumero('9')"></input>
+        <input type="button" value="x" onclick="calculadora.pulsarOperacion('x')"></input>
+        <input type="button" value="÷" onclick="calculadora.pulsarOperacion('÷')"></input>
+        <input type="button" value="4" onclick="calculadora.pulsarNumero('4')"></input>
+        <input type="button" value="5" onclick="calculadora.pulsarNumero('5')"></input>
+        <input type="button" value="6" onclick="calculadora.pulsarNumero('6')"></input>
+        <input type="button" value="-" onclick="calculadora.pulsarOperacion('-')"></input>
+        <input type="button" value="Mr/c" onclick="calculadora.pulsarTecla('Mr/c')"></input>
+        <input type="button" value="1" onclick="calculadora.pulsarNumero('1')"></input>
+        <input type="button" value="2" onclick="calculadora.pulsarNumero('2')"></input>
+        <input type="button" value="3" onclick="calculadora.pulsarNumero('3')"></input>
+        <input type="button" value="+" onclick="calculadora.pulsarOperacion('+')"></input>
+        <input type="button" value="M-" onclick="calculadora.pulsarTecla('M-')"></input>
+        <input type="button" value="0" onclick="calculadora.pulsarNumero('0')"></input>
+        <input type="button" value="." onclick="calculadora.pulsarTecla('.')"></input>
+        <input type="button" value="=" onclick="calculadora.pulsarOperacion('=')"></input>
+        <input type="button" value ="M+" onclick="calculadora.pulsarTecla('M+')"></input>
+    </main>
+</body>
+</html>
