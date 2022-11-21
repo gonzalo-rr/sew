@@ -1,1 +1,0 @@
-document.write("Localización: " + navegador.localizacion + " Cookies activadas: " + navegador.cookies);
