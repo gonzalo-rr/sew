@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <h1>Ejercicio 1 Segunda Parte ECMAScript</h1>
+        <h1> Ejercicio 7 JQuery </h1>
     </header>
     
     <main>
@@ -40,7 +40,7 @@
             <li> Elevado consumo de recursos </li>
         </ul>
 
-    </main><h2>ECMA Script</h2><p>ECMAScript es una especificación de lenguaje de programación publicada por Ecma International. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje JavaScript propuesto como estándar por Netscape Communications Corporation. Actualmente está aceptado como el estándar ISO/IEC 22275:2018.</p><p>ECMAScript define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes del estilo de C. Soporta algunas características de la programación orientada a objetos mediante objetos basados en prototipos y pseudoclases.</p><p>La mayoría de navegadores de Internet incluyen una implementación del estándar ECMAScript, al igual que un acceso al Document Object Model para manipular páginas web. JavaScript está implementado en la mayoría de navegadores, Internet Explorer de Microsoft usa JScript. El navegador Opera tenía su propio intérprete de ECMAScript con extensiones para soportar algunas características de JavaScript y JScript, actualmente Opera está basado en Chromium (y utiliza su intérprete). Cada navegador tiene extensiones propias al estándar ECMAScript, pero cualquier código que se adecúe al estándar debería funcionar en todos ellos.</p>
+    </main>
 
     <article>
         <h2> Tabla </h2>
@@ -48,37 +48,37 @@
             <caption>Tabla</caption>
 
             <thead>
-                <tr><th>suma</th>
-                    <th> X </th>
-                    <th> A </th>
-                    <th> B </th>
-                    <th> C </th>
+                <tr><th scope="row" id="sumaCol">suma</th>
+                    <th scope="col" id="x"> X </th>
+                    <th scope="col" id="a"> A </th>
+                    <th scope="col" id="b"> B </th>
+                    <th scope="col" id="c"> C </th>
                 </tr>
             </thead>
             
             <tbody><tr>
-	<th>suma</th>
+	<th scope="col" id="sumaRow">suma</th>
 	<td>,161</td>
 	<td>,195</td>
 	<td>,129</td>
 	<td>,485</td></tr>
-                <tr><td>155</td>
-                    <th> D </th>
-                    <td> 55 </td>
-                    <td> 88 </td>
-                    <td> 12 </td>
+                <tr><td headers="d sumaCol">155</td>
+                    <th scope="row" id="d"> D </th>
+                    <td headers="d a"> 55 </td>
+                    <td headers="d b"> 88 </td>
+                    <td headers="d c"> 12 </td>
                 </tr>
-                <tr><td>167</td>
-                    <th> E </th>
-                    <td> 41 </td>
-                    <td> 33 </td>
-                    <td> 93 </td>
+                <tr><td headers="e sumaCol">167</td>
+                    <th scope="row" id="e"> E </th>
+                    <td headers="e a"> 41 </td>
+                    <td headers="e b"> 33 </td>
+                    <td headers="e c"> 93 </td>
                 </tr>
-                <tr><td>163</td>
-                    <th> F </th>
-                    <td> 65 </td>
-                    <td> 74 </td>
-                    <td> 24 </td>
+                <tr><td headers="f sumaCol">163</td>
+                    <th scope="row" id="f"> F </th>
+                    <td headers="f a"> 65 </td>
+                    <td headers="f b"> 74 </td>
+                    <td headers="f c"> 24 </td>
                 </tr>
             </tbody>
 
@@ -97,7 +97,7 @@
         <button onclick="helper.sumarTabla()"> Sumar tabla </button>
     </article>
 
-    <article>Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;H2&amp;gt; valor: Etiqueta padre : &amp;lt;BODY&amp;gt; elemento : &amp;lt;ARTICLE&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;BUTTON&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;BUTTON&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;BUTTON&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;BUTTON&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;BUTTON&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;BUTTON&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;BUTTON&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;H2&amp;gt; valor: Etiqueta padre : &amp;lt;BODY&amp;gt; elemento : &amp;lt;ARTICLE&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TBODY&amp;gt; elemento : &amp;lt;TR&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TBODY&amp;gt; elemento : &amp;lt;TR&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TBODY&amp;gt; elemento : &amp;lt;TR&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TD&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TBODY&amp;gt; elemento : &amp;lt;TR&amp;gt; valor: Etiqueta padre : &amp;lt;TABLE&amp;gt; elemento : &amp;lt;TBODY&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;TR&amp;gt; elemento : &amp;lt;TH&amp;gt; valor: Etiqueta padre : &amp;lt;THEAD&amp;gt; elemento : &amp;lt;TR&amp;gt; valor: Etiqueta padre : &amp;lt;TABLE&amp;gt; elemento : &amp;lt;THEAD&amp;gt; valor: Etiqueta padre : &amp;lt;TABLE&amp;gt; elemento : &amp;lt;CAPTION&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;TABLE&amp;gt; valor: Etiqueta padre : &amp;lt;ARTICLE&amp;gt; elemento : &amp;lt;H2&amp;gt; valor: Etiqueta padre : &amp;lt;BODY&amp;gt; elemento : &amp;lt;ARTICLE&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;MAIN&amp;gt; elemento : &amp;lt;UL&amp;gt; valor: Etiqueta padre : &amp;lt;MAIN&amp;gt; elemento : &amp;lt;H2&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;UL&amp;gt; elemento : &amp;lt;LI&amp;gt; valor: Etiqueta padre : &amp;lt;MAIN&amp;gt; elemento : &amp;lt;UL&amp;gt; valor: Etiqueta padre : &amp;lt;MAIN&amp;gt; elemento : &amp;lt;H2&amp;gt; valor: Etiqueta padre : &amp;lt;BODY&amp;gt; elemento : &amp;lt;MAIN&amp;gt; valor: Etiqueta padre : &amp;lt;HEADER&amp;gt; elemento : &amp;lt;H1&amp;gt; valor: Etiqueta padre : &amp;lt;BODY&amp;gt; elemento : &amp;lt;HEADER&amp;gt; valor: 
+    <article>
         <h2> Elemento creado con ECMAScript </h2>
     </article>
 
