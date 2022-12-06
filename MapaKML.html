@@ -25,7 +25,8 @@
 
     <main>
         <h2> Seleccione el fichero KML </h2>
-        <p><input type="file" name="Archivos" onchange="map.mostrarPuntos()"></p>
+        <p><label for="Archivos">Pulse para seleccionar el archivo: </label></p>
+        <p><input type="file" id="Archivos" onchange="calcularTamañoArchivos()"></p>
         <p>Archivos seleccionados: </p>
     </main>
 
