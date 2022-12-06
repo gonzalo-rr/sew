@@ -15,7 +15,7 @@ function cargarImagen() {
         ctx.drawImage(img, 0, 0, 100, 100);
     }, false);
 
-    var archivo = document.getElementsByName("Archivos")[0].files[0];
+    var archivo = document.getElementById("Archivos").files[0];
     img.src = archivo.name;
 }
 

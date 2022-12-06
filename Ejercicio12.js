@@ -7,7 +7,7 @@ else document.write("<p>El navegador NO soporta el API File y este programa pued
           
 function calcularTamañoArchivos() {
     var nBytes = 0;
-    var archivos = document.getElementsByName("Archivos")[0].files;
+    var archivos = document.getElementById("Archivos").files;
     var nArchivos = archivos.length;
     for (var i = 0; i < nArchivos; i++) {
       nBytes += archivos[i].size;

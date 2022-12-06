@@ -6,7 +6,7 @@ class Map {
   
     mostrarPuntos()
     {
-        var archivos = document.getElementsByName("Archivos")[0].files;
+        var archivos = document.getElementById("Archivos").files;
         var fr = new FileReader();
         fr.readAsText(archivos[0]);
         fr.addEventListener('load', (event) => {
