@@ -1,0 +1,39 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="author" content="UO283874-Gonzalo-Rodríguez-Rodríguez">
+    <meta name="description" content="Uso de carga de ficheros y pantalla completa en canvas">
+    <meta name="keywords" content="fichero, file, API, javascript, canvas, fullscreen">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carga de ficheros</title>
+
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio14.js"></script></head><body><p>Este navegador soporta el API File </p>
+
+
+
+    <header>
+        <h1> Cargue una imagen para visualizarla </h1>
+    </header>
+
+    <main>
+        <h2> Seleccione los ficheros que quiere importar </h2>
+        <p><input type="file" name="Archivos" onchange="cargarImagen()"></p>
+    </main>
+
+    <section ondrop="dropHandler(event)" ondragover="avoidCopy(event)">
+        <h3>Puede arrastrar aqui la imágen que desee</h3>
+
+    </section>
+
+    <canvas>
+    </canvas>
+
+    <div id="output">
+        
+    </div>
+
+
+</body></html>
