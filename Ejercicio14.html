@@ -20,7 +20,8 @@
 
     <main>
         <h2> Seleccione los ficheros que quiere importar </h2>
-        <p><input type="file" name="Archivos" onchange="cargarImagen()"></p>
+        <p><label for="Archivos">Pulse para seleccionar el archivo: </label></p>
+        <p><input type="file" id="Archivos" onchange="calcularTamañoArchivos()"></p>
     </main>
 
     <section ondrop="dropHandler(event)" ondragover="avoidCopy(event)">
