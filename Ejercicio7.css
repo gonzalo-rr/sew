@@ -72,3 +72,7 @@ nav a:hover { /* Especificidad: 012 */
 p a:hover { /* Especificidad: 012 */
     color: orangered;
 }
+input {
+    font-size: 3vh;
+    margin: 2vh;
+}
