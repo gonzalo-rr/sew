@@ -31,7 +31,7 @@ header {
 
     display: grid;
 
-    grid-template-columns: 50vw;
+    grid-template-columns: 75vw;
     grid-template-rows: 5vh;
 }
 
@@ -45,7 +45,7 @@ main {
 
     display: grid;
     
-    grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
     grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
 }
 
@@ -106,7 +106,7 @@ input[value = ","] {
 }
 
 textarea {
-    width: 49.7vw;
+    width: 75vw;
     height: 25vh;
 
     text-align: left;
