@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="UO283874-Gonzalo-Rodríguez-Rodríguez" />
+    <meta name ="description" content ="Calculadora RPN." />
+    <meta name ="keywords" content ="Calculadora, RPN, JavaScript" />
+    
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora RPN</title>
+
+    <script src="CalculadoraRPNV2.js"></script>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPNV2.css" />
+</head>
+
+<body>
+    <header>
+        <label for="pantalla"> CALCULADORA RPN </label>
+        <textarea id="pantalla" name="pantalla" maxlength="10000" readonly></textarea>
+    </header>
+
+    <main>
+        <input type="button" value="sin" onclick="calculadora.pulsarOperacion(value)"/>
+        <input type="button" value="cos" onclick="calculadora.pulsarOperacion(value)"/>
+        <input type="button" value="tan" onclick="calculadora.pulsarOperacion(value)"/>
+        <input type="button" value="log" onclick="calculadora.pulsarOperacion('log')"/>
+        <input type="button" value="Mod" onclick="calculadora.pulsarOperacion('Mod')"/>
+        <input type="button" value="↑" onclick="calculadora.pulsarTecla('trig')"/>
+        <input type="button" value="7" onclick="calculadora.pulsarNumero('7')"/>
+        <input type="button" value="8" onclick="calculadora.pulsarNumero('8')"/>
+        <input type="button" value="9" onclick="calculadora.pulsarNumero('9')"/>
+        <input type="button" value="+" onclick="calculadora.pulsarOperacion('+')"/>
+        <input type="button" value="√" onclick="calculadora.pulsarOperacion('√')"/>
+        <input type="button" value="4" onclick="calculadora.pulsarNumero('4')"/>
+        <input type="button" value="5" onclick="calculadora.pulsarNumero('5')"/>
+        <input type="button" value="6" onclick="calculadora.pulsarNumero('6')"/>
+        <input type="button" value="-" onclick="calculadora.pulsarOperacion('-')"/>
+        <input type="button" value="x^y" onclick="calculadora.pulsarOperacion('x^y')"/>
+        <input type="button" value="1" onclick="calculadora.pulsarNumero('1')"/>
+        <input type="button" value="2" onclick="calculadora.pulsarNumero('2')"/>
+        <input type="button" value="3" onclick="calculadora.pulsarNumero('3')"/>
+        <input type="button" value="x" onclick="calculadora.pulsarOperacion('x')"/>
+        <input type="button" value="CE" onclick="calculadora.pulsarTecla('CE')"/>
+        <input type="button" value="π" onclick="calculadora.pulsarNumero('π')"/>
+        <input type="button" value="0" onclick="calculadora.pulsarNumero('0')"/>
+        <input type="button" value="," onclick="calculadora.pulsarTecla('.')"/>
+        <input type="button" value="÷" onclick="calculadora.pulsarOperacion('÷')"/>
+        <input type="button" value="C" onclick="calculadora.pulsarTecla('C')"/>
+        <input type="button" value="ENTER" onclick="calculadora.pulsarTecla('ENTER')"/>
+    </main>
+</body>
+</html>
