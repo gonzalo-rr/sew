@@ -33,69 +33,69 @@
     </section>
     <main>
         <h2>Añadir persona</h2>
-        <form action="#" method="post">
-                <p><label for="dni">DNI:</label> <input type="text" id="dni" name="dni"></p>
-                <p><label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre"></p>
-                <p><label for="apellidos">Apellidos:</label><input type="text" id="apellidos" name="apellidos"></p>
-                <p><label for="email">Email:</label><input type="email" id="email" name="email"></p>
-                <p><label for="telefono">Telefono:</label><input type="number" id="telefono" name="telefono"></p>
-                <p><label for="edad">Edad:</label><input type="number" id="edad" name="edad" min="0" max="130"></p>
+        <form action='#' method='post'>
+                <p><label for="dni">DNI:</label><input type="text" id="dni" name="dni"/></p>
+                <p><label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre"/></p>
+                <p><label for="apellidos">Apellidos:</label><input type="text" id="apellidos" name="apellidos"/></p>
+                <p><label for="email">Email:</label><input type="email" id="email" name="email"/></p>
+                <p><label for="telefono">Telefono:</label><input type="number" id="telefono" name="telefono"/></p>
+                <p><label for="edad">Edad:</label><input type="number" id ="edad" name="edad" min="0" max="130"/></p>
                 <fieldset>
                     <legend>Sexo:</legend>
                     <p>
                         <label for="masculino"> Hombre </label>
-                        <input type="radio" id="masculino" name="sexo" value="hombre" checked="">
+                        <input type="radio" id="masculino" name="sexo" value="hombre" checked/>
 
                         <label for="femenino"> Mujer </label>
-                        <input type="radio" id="femenino" name="sexo" value="mujer">
+                        <input type="radio" id="femenino" name="sexo" value="mujer"/>
                     </p>
                 </fieldset>
-                <p>Nivel de pericia (0-10) <input type="number" name="pericia" min="0" max="10"></p>
-                <p>Tiempo en realizar la tarea (segundos): <input type="number" name="tiempo" min="0" max="1600"></p>
+                <p><label for="pericia">Nivel de pericia (0-10):</label><input type="number" id="pericia" name="pericia" min="0" max="10"/></p>
+                <p><label for="tiempo">Tiempo en realizar la tarea (segundos):</label><input type="number" id="tiempo" name="tiempo" min="0" max="1600"/></p>
                 <fieldset>
                     <legend>¿Se ha realizado la tarea correctamente?:</legend>
                     <p>
                         <label for="correcto"> Sí </label>
-                        <input type="radio" id="correcto" name="correcto" value="si" checked="">
+                        <input type="radio" id="correcto" name="correcto" value="si" checked/>
 
                         <label for="incorrecto"> No </label>
-                        <input type="radio" id="incorrecto" name="correcto" value="no">
+                        <input type="radio" id="incorrecto" name="correcto" value="no"/>
                     </p>
                 </fieldset>
-                <p>Comentarios: <textarea id="comentarios" name="comentarios" maxlength="1000">  </textarea></p>
-                <p>Propuestas de mejora: <textarea id="propuestas" name="propuestas" maxlength="1000">  </textarea></p>
-                <p>Valoración de la aplicación (0-10): <input type="number" name="nota" min="0" max="10"></p>
-                <input type="submit" name="insertar" value="Insertar Datos">
+                <p><label for="comentarios">Comentarios:</label><textarea id="comentarios" name="comentarios" maxlength="1000">  </textarea></p>
+                <p><label for="propuestas">Propuestas de mejora:</label><textarea id="propuestas" name="propuestas" maxlength="1000">  </textarea></p>
+                <p><label for="nota">Valoración de la aplicación (0-10):</label><input type="number" id="nota" name="nota" min="0" max="10"/></p>
+                <input type="submit" name="insertar" value="Insertar Datos"/>
         </form>
 
 
         <h2>Buscar persona</h2>
-        <form action="#" method="post">
-                <p><label for="b_dni">DNI:</label> <input type="text" id="b_dni" name="b_dni"><input type="submit" name="buscarDni" value="Buscar por DNI"></p>
-                <p>Nombre: <input type="text" name="b_nombre"><input type="submit" name="buscarNombre" value="Buscar por nombre"></p>
-                <p>Apellidos: <input type="text" name="b_apellidos"><input type="submit" name="buscarApellidos" value="Buscar por apellidos"></p>
+        <form action='#' method='post'>
+                <p><label for="b_dni">DNI:</label> <input type="text" id="b_dni" name="b_dni"/><input type="submit" name="buscarDni" value="Buscar por DNI"/></p>
+                <p><label for="b_nombre">Nombre:</label><input type="text" id="b_nombre" name="b_nombre"/><input type="submit" name="buscarNombre" value="Buscar por nombre"/></p>
+                <p><label for="b_apellidos">Apellidos:</label><input type="text" id="b_apellidos" name="b_apellidos"/><input type="submit" name="buscarApellidos" value="Buscar por apellidos"/></p>
                 <fieldset>
                     <legend>Sexo:</legend>
                     <p>
                         <label for="b_masculino"> Hombre </label>
-                        <input type="radio" id="b_masculino" name="b_sexo" value="hombre" checked="">
+                        <input type="radio" id="b_masculino" name="b_sexo" value="hombre" checked/>
 
                         <label for="b_femenino"> Mujer </label>
-                        <input type="radio" id="b_femenino" name="b_sexo" value="mujer">
+                        <input type="radio" id="b_femenino" name="b_sexo" value="mujer"/>
                     </p>
                 </fieldset>
-                <input type="submit" name="buscarSexo" value="Buscar por sexo">
+                <input type="submit" name="buscarSexo" value="Buscar por sexo"/>
                 <fieldset>
                     <legend>¿Se ha realizado la tarea correctamente?:</legend>
                     <p>
                         <label for="b_correcto"> Sí </label>
-                        <input type="radio" id="b_correcto" name="b_correcto" value="si" checked="">
+                        <input type="radio" id="b_correcto" name="b_correcto" value="si" checked/>
 
                         <label for="b_incorrecto"> No </label>
-                        <input type="radio" id="b_incorrecto" name="b_correcto" value="no">
+                        <input type="radio" id="b_incorrecto" name="b_correcto" value="no"/>
                     </p>
                 </fieldset>
-                <input type="submit" name="buscarCorrecto" value="Buscar personas que hayan completado la tarea">
+                <input type="submit" name="buscarCorrecto" value="Buscar personas que hayan completado la tarea"/>
         </form>
 
         <h2>Modificar datos de una persona</h2>
