@@ -71,18 +71,7 @@
 
         <h2>Buscar persona</h2>
         <form action="#" method="post">
-
-
-        <p><label for="dni">DNI:</label> <input type="text" id="dni" name="dni"></p>
-                <p><label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre"></p>
-                <p><label for="apellidos">Apellidos:</label><input type="text" id="apellidos" name="apellidos"></p>
-                <p><label for="email">Email:</label><input type="email" id="email" name="email"></p>
-                <p><label for="telefono">Telefono:</label><input type="number" id="telefono" name="telefono"></p>
-                <p><label for="edad">Edad:</label><input type="number" id="edad" name="edad" min="0" max="130"></p>
-
-
-
-                <p><label for="dni">DNI:</label> <input type="text" id="dni" name="b_dni"><input type="submit" name="buscarDni" value="Buscar por DNI"></p>
+                <p><label for="b_dni">DNI:</label> <input type="text" id="b_dni" name="b_dni"><input type="submit" name="buscarDni" value="Buscar por DNI"></p>
                 <p>Nombre: <input type="text" name="b_nombre"><input type="submit" name="buscarNombre" value="Buscar por nombre"></p>
                 <p>Apellidos: <input type="text" name="b_apellidos"><input type="submit" name="buscarApellidos" value="Buscar por apellidos"></p>
                 <fieldset>
@@ -111,13 +100,13 @@
 
         <h2>Modificar datos de una persona</h2>
         <form action="#" method="post">
-                <p><label for="m_dni">DNI:</label><input type="text" name="m_dni"></p>
+                <p><label for="m_dni">DNI:</label><input type="text" id="m_dni" name="m_dni"></p>
                 <p>Datos a modificar:</p>
-                <p><label for="m_nombre">Nombre:</label><input type="text" name="m_nombre"><input type="submit" name="modificarNombre" value="Modificar nombre"></p>
-                <p><label for="m_apellidos">Apellidos:</label><input type="text" name="m_apellidos"><input type="submit" name="modificarApellidos" value="Modificar apellidos"></p>
-                <p><label for="m_email">Email:</label><input type="email" name="m_email"><input type="submit" name="modificarEmail" value="Modificar email"></p>
-                <p><label for="m_telefono">Teléfono:</label><input type="number" name="m_telefono"><input type="submit" name="modificarTelefono" value="Modificar teléfono"></p>
-                <p><label for="m_edad">Edad:</label><input type="number" name="m_edad" min="0" max="130"><input type="submit" name="modificarEdad" value="Modificar edad"></p>
+                <p><label for="m_nombre">Nombre:</label><input type="text" id="m_nombre" name="m_nombre"><input type="submit" name="modificarNombre" value="Modificar nombre"></p>
+                <p><label for="m_apellidos">Apellidos:</label><input type="text" id="m_apellidos" name="m_apellidos"><input type="submit" name="modificarApellidos" value="Modificar apellidos"></p>
+                <p><label for="m_email">Email:</label><input type="email" id="m_email" name="m_email"><input type="submit" name="modificarEmail" value="Modificar email"></p>
+                <p><label for="m_telefono">Teléfono:</label><input type="number" id="m_telefono" name="m_telefono"><input type="submit" name="modificarTelefono" value="Modificar teléfono"></p>
+                <p><label for="m_edad">Edad:</label><input type="number" id="m_edad" name="m_edad" min="0" max="130"><input type="submit" name="modificarEdad" value="Modificar edad"></p>
                 <fieldset>
                     <legend>Sexo:</legend>
                     <p>
@@ -129,8 +118,8 @@
                     </p>
                 </fieldset>
                 <input type="submit" name="modificarSexo" value="Modificar sexo">
-                <p><label for="m_pericia">Pericia (0-10):</label><input type="number" name="m_pericia" min="0" max="10"><input type="submit" name="modificarPericia" value="Modificar nivel de pericia"></p>
-                <p><label for="m_tiempo">Tiempo en realizar la tarea (segundos):</label><input type="number" name="m_tiempo" min="0" max="1600"><input type="submit" name="modificarTiempo" value="Modificar tiempo en realizar la tarea"></p>
+                <p><label for="m_pericia">Pericia (0-10):</label><input type="number" id="m_pericia" name="m_pericia" min="0" max="10"><input type="submit" name="modificarPericia" value="Modificar nivel de pericia"></p>
+                <p><label for="m_tiempo">Tiempo en realizar la tarea (segundos):</label><input type="number" id="m_tiempo" name="m_tiempo" min="0" max="1600"><input type="submit" name="modificarTiempo" value="Modificar tiempo en realizar la tarea"></p>
                 <fieldset>
                     <legend>Tarea correcta:</legend>
                     <p>
@@ -144,14 +133,14 @@
                 <input type="submit" name="modificarCorrecto" value="Modificar tarea completada">
                 <p><label for="m_comentarios">Comentarios:</label><textarea id="m_comentarios" name="m_comentarios" maxlength="1000">  </textarea></p><p><input type="submit" name="modificarComentarios" value="Modificar comentarios"></p>
                 <p><label for="m_propuestas">Propuestas de mejora:</label><textarea id="m_propuestas" name="m_propuestas" maxlength="1000">  </textarea></p><p><input type="submit" name="modificarPropuestas" value="Modificar propuestas"></p>
-                <p><label for="m_nota">Valoración de la aplicación (0-10):</label><input type="number" name="m_nota" min="0" max="10"><input type="submit" name="modificarNota" value="Modificar valoración"></p>
+                <p><label for="m_nota">Valoración de la aplicación (0-10):</label><input type="number" id="m_nota" name="m_nota" min="0" max="10"><input type="submit" name="modificarNota" value="Modificar valoración"></p>
         </form>
 
         <h2>Eliminar a una persona</h2>
         <form action="#" method="post">
-                <p><label for="d_dni">DNI:</label><input type="text" name="d_dni"></p>
+                <p><label for="d_dni">DNI:</label><input type="text" id="d_dni" name="d_dni"></p>
                 <input type="submit" name="eliminar" value="Eliminar persona">
         </form>
-    <main>
+    </main>
 
-</main></main></body></html>
+</body></html>
