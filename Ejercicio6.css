@@ -10,6 +10,12 @@ body { /* Especificidad: 001 */
 
     align-self: center;
 }
+h1 {
+    font-size: 4.5vh;
+}
+h2 {
+    font-size: 3.5vh;
+}
 footer { /* Especificidad: 001 */
     color: black;
     background-color: #8eb9bb;
